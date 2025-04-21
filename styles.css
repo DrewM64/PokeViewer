@@ -1,0 +1,59 @@
+html,
+body {
+    width: 100vw;
+    min-height: 100vh;
+    background: rgb(44,0,145);
+    background: linear-gradient(0deg, rgba(44,0,145,1) 0%, rgba(9,34,121,1) 36%, rgba(158,151,255,1) 100%);
+    background-size: cover;
+    font-family: sans-serif;
+}
+
+h1, label {
+    color: white;
+}
+
+h1, form {
+  text-align: center;
+}
+
+footer {
+  color: white;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+}
+
+.pokemonBox, .speciesBox {
+    background-color: rgba(255,255,255,0.3);
+    color: white;
+    width: 30rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+}
+
+/* Autocomplete results box */
+
+#result {
+    border: 1px dotted #ccc;
+    padding: 3px;
+  }
+  #result ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  #result ul li {
+    padding: 5px 0;
+    color: white;
+  }
+  #result ul li:hover {
+    background: #eee;
+    color:black;
+  }
+
+  .searchbox {
+    position: relative;
+    display: inline-block;
+  }

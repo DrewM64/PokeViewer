@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Pok&eacute;Viewer</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Pok&eacute;Viewer!</h1>
+    </header>
+
+    <main>
+        <!-- user selects pokemon using searchbox w/ autocomplete -->
+        <form autocomplete="off">
+            <div class="searchbox">
+                <label for="items">I choose you: </label>
+                <input id="pokemonName" type="text" placeholder="Pokemon Name" onKeyUp="showResults(this.value)" />
+                <button id="search">🔎</button>
+                <div id="result"></div>
+            </div>
+        </form>
+
+        <!-- Data displays in card below -->
+        <div class="pokemonBox">
+            <!-- Add pokedex entries? (pokemon-species/name.flavor-text-entries[0].flavor-text) -->
+        </div>
+        <div class="speciesBox">
+            <!-- Add latest cry -->
+            <!-- Add pokedex entries (pokemon-species/name.flavor-text-entries[0].flavor-text) -->
+        </div>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 DrewM64</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
