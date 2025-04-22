@@ -22,6 +22,8 @@ footer {
   width: 100%;
   left: 0;
   bottom: 0;
+  z-index: 0;
+  border: solid 1px red;
 }
 
 .pokemonBox, .speciesBox {
@@ -35,7 +37,7 @@ footer {
 
 /* Autocomplete results box */
 
-#result {
+/* #result {
     border: 1px dotted #ccc;
     padding: 3px;
   }
@@ -51,9 +53,34 @@ footer {
   #result ul li:hover {
     background: #eee;
     color:black;
-  }
+  } */
 
   .searchbox {
     position: relative;
     display: inline-block;
+  }
+
+  .autocomplete-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-height: 150px;
+    overflow-y: auto;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+    color: black;
+  }
+  
+  .autocomplete-item {
+    padding: 8px;
+    cursor: pointer;
+    color: black;
+  }
+  
+  .autocomplete-item:hover {
+    background-color: #f0f0f0;
+    color: black;
   }
